@@ -310,7 +310,7 @@ class Node implements \ArrayAccess, \IteratorAggregate
     /**
      * Get an iterator.
      */
-    public function getIterator(): \ArrayIterator
+    public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->_children);
     }
